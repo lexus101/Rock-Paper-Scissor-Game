@@ -14,17 +14,17 @@
   
 myHand = 0
 enemyHand = 0
-
 roomCode = 0
+
 userid=uuidv4()
 
 function hand(x){
-
+if (roomCode != 0){
     firebase.database().ref("room/"+[roomCode]).update({
     [userid]: x
     })
-    
-  }
+} 
+}
 
 function create(){
 
@@ -67,6 +67,7 @@ function joinButton(){
 
 function roomcode(){
   console.log(roomCode)
+  document.getElementById("currentroom").innerHTML = roomCode;
 }
 
 
