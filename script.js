@@ -380,4 +380,3 @@ firebase.database().ref("room/"+[roomCode]+"/"+[userid]+"/"+[characterr]+"/ready
 
 
 }
-
