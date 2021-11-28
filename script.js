@@ -55,8 +55,9 @@ function create(){
 //firebase.database().ref("room/"+[roomCode]).update({
  // 1 :0
 //})
-  console.log('you are in the room'+roomCode)
-  document.getElementById("currentroom").innerHTML = roomCode;
+  // console.log('you are in the room'+roomCode)
+  // document.getElementById("currentroom").innerHTML = roomCode;
+  
 }
 
 function join(x){
@@ -380,3 +381,4 @@ firebase.database().ref("room/"+[roomCode]+"/"+[userid]+"/"+[characterr]+"/ready
 
 
 }
+
