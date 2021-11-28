@@ -343,7 +343,7 @@ characterr = x.name
 
 
 function next(){
-  //document.getElementById("rps").style.display = "none"
+  document.getElementById("rps").style.display = "none"
  ready = "ready"
   firebase.database().ref("room/"+[roomCode]+"/"+[userid]+"/"+[characterr]).update({
   [ready]:0
@@ -367,12 +367,11 @@ firebase.database().ref("room/"+[roomCode]+"/"+[userid]+"/"+[characterr]+"/"+[a]
 firebase.database().ref("room/"+[roomCode]+"/"+[enemyID]+"/"+[enemycharacter]).on('value',function(a){a.forEach(function(snapshot){
 
 if(snapshot.key == "ready"){
-  // document.getElementById("rps").style.display = "block"
- console.log("enemyread")
+   document.getElementById("rps").style.display = "block"
+firebase.database().ref("room/"+[roomCode]+"/"+[userid]+"/"+[characterr]+"/ready").remove()
+
 }
-else{
- console.log("enemynotready")
-}
+
 
 })
 })
