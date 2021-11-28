@@ -7,27 +7,82 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id = "hi">
+    <div id="menu">
       <button id = "create" onClick="create()">Create </button>
-      <button id = "join" onClick="joinButton()" >Join </button>
-      <button id = "roomcode" onClick="roomcode()" >Current Roomcode </button>
+      <button id = "dar" onClick="dar()" >delete all room </button>
+      <button id = "refresh" onClick="refresh()" >refresh </button>
+ 
+    </div>
+    <div id="rooms">
+
+    </div>
+    
+    <br>
+    <br>
+    <br>
+ <div id="characterselection">
+   <p>character selection </p>
+      <button id = "" onClick="character(Dummy)"> Dummy </button>
+       <button id = "" onClick="character(Dio)"> Dio </button>
+        <button id = "" onClick="character(Person)"> Person </button>
+   
     </div>
 
-    <br>
+
+    <div id="character">
+      
+    <p> Your character</p>
+    <h4 id="name1"> </h4>
+    <h4 id="health1"> </h4>
+    <h4 id="rock1"> </h4>
+    <h4 id="paper1"> </h4>
+    <h4 id="scissor1"> </h4>
+
+
+    <p> enemy character</p> <h4 id="enemycharacter"> </h4>
+    <h4 id="name2"> </h4>
+    <h4 id="health2"> </h4>
+    <h4 id="rock2"> </h4>
+    <h4 id="paper2"> </h4>
+    <h4 id="scissor2"> </h4>
+
+    </div>
+
+    <div id="rps">
       <button id = "rockButton" onClick="hand('rock')">Rock </button>
       <button id = "paperButton" onClick="hand('paper')" >Paper </button>
       <button id = "scissorButton"  onClick="hand('scissor')">Scissor </button>
+
+ <button id = "nextButton"  onClick="next()">Next </button>
+    </div>
+
+
+
      <br>
      <br>
+     
       <div id = "Result" >
       
-      <button id = "showops" onClick="show()" > show other player selection </button>
-      <button id = "test" onClick="test()" >test </button>
-
+     
+      <!--<button id = "replay" onClick="replay()" > replay </button>
+-->
       </div>
+      
+      <br>
+      <button id = "delete" onClick ="dlete()"> delete current room</button>
 
       <p> you are in room </p>
       <p id="currentroom"> </p>
+      
+      <div id="gameplay">
+      <p > your hand </p>
+      <p id="yourhand"> </p>
+
+      <p > enemy's hand </p>
+      <p id="enemyhand"> </p>
+
+      <h2 id="winorlose"> </h2>
+      </div>
     
    
 
