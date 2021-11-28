@@ -353,9 +353,9 @@ function next(){
 
 firebase.database().ref("room/"+[roomCode]+"/"+[userid]+"/"+[characterr]).once('value',function(a){a.forEach(function(snapshot){
 
-if(snapshot.key != "keep"){
+if(snapshot.key != "keep" && snapshot.key != "ready"){
 console.log(snapshot.key)
-//a = snapshot.key
+a = snapshot.key
 
 firebase.database().ref("room/"+[roomCode]+"/"+[userid]+"/"+[characterr]+"/"+[a]).remove()
 
